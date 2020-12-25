@@ -16,6 +16,11 @@ wget http://www.internic.net/domain/named.root
 
 # Adicionar root.key
 unbound-anchor -a /etc/unbound/root.key -v
+# Permissão Unbound
+chown unbound.unbound /etc/unbound/ -R
+
+# reiniciar serviço unbound
+systemctl start unbound
 
 # Backup Arquivo Default Unbound
 mv unbound.conf unbound.conf.back
