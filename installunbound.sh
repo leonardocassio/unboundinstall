@@ -16,6 +16,7 @@ wget http://www.internic.net/domain/named.root
 
 # Adicionar root.key
 unbound-anchor -a /etc/unbound/root.key -v
+
 # Permissão Unbound
 chown unbound.unbound /etc/unbound/ -R
 
