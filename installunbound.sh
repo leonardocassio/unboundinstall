@@ -23,3 +23,16 @@ chown unbound.unbound /etc/unbound/ -R
 # Reiniciar Serviço Unbound
 systemctl restart unbound
 
+# Entra na pasta Raiz do Unbound
+cd /etc/unbound
+
+# Backup Arquivo Default Unbound
+cp unbound.conf unbound.conf.back
+
+# Apagar arquivo unbound.conf
+unbound.conf
+
+# Baixar aquivo unbound.conf
+
+
+
